@@ -1,5 +1,6 @@
 <?php
 require_once 'config.php';
 $page = isset($request['page']) ? $request['page'] : 'Homepage';
+$action = isset($request['action']) ? $request['action'] : 'run';
 $pageController = new $page;
-$pageController->run($request, $session);
+$pageController->$action($request, $session);
