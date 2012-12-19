@@ -83,7 +83,7 @@ switch (SERVER) {
         define('DB_SERVER', 'localhost');
         define('DB_USER', 'adeline');
         define('DB_PASSWORD', 'adeline');
-        define('DB', 'adeline');
+        define('DB', 'adelinefoguistore');
         break;
     case TEST_SERVER:
         define('DB_SERVER', 'localhost:/tmp/mysql5.sock');

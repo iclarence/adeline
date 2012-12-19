@@ -17,11 +17,6 @@ require_once 'constants.php';
 function __autoload($className) {
 
     /**
-     * This directory: /www/www/
-     */
-    $thisDir = dirname(__FILE__);
-
-    /**
      * Search classes in controller/ and subdirectories.
      */
     $path = findClass('controller', $className);
