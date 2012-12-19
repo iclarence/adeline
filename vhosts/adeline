@@ -1,0 +1,15 @@
+#
+# Virtual Hosts
+#
+# Adeline Fogui Store
+
+<VirtualHost *:80>
+    DocumentRoot "/var/www/adeline"
+    ServerName adeline
+<Directory "/var/www/adeline">
+        Options +Indexes FollowSymLinks +ExecCGI
+        AllowOverride AuthConfig FileInfo
+        Order allow,deny
+        Allow from all
+</Directory>
+</VirtualHost>
