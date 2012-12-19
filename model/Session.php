@@ -91,7 +91,10 @@ class Session {
      * @param mixed $name
      * @return mixed
      */
-    public function getVariable($name) {
+    public function getVariable($name = NULL) {
+        if ($name == NULL) {
+            return $_SESSION;
+        }
         if (is_array($name)) {
             if (count($name) > 1) {
                 if (!isset($_SESSION[$name[0]][$name[1]])) {

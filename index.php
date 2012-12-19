@@ -1,3 +1,5 @@
 <?php
 require_once 'config.php';
-$database = Database::getInstance();
+$page = isset($request['page']) ? $request['page'] : 'Homepage';
+$pageController = new $page;
+$pageController->run($request, $session);

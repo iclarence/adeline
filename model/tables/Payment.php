@@ -1,16 +1,16 @@
 <?php
 
 /**
- * Description of Category
+ * Description of Payment
  *
  * @author Ian Clarence <ian.clarence@gmail.com>
  */
-class Category extends ActiveRecord {
+class Payment extends ActiveRecord {
 
     /**
      * The table name.
      */
-    const TABLE = 'category';
+    const TABLE = 'payment';
 
     /**
      * The constructor.

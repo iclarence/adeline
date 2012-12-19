@@ -19,13 +19,13 @@ function __autoload($className) {
     /**
      * Search classes in controller/ and subdirectories.
      */
-    $path = findClass('controller', $className);
+    $path = findClass($_SERVER['DOCUMENT_ROOT'] . '/controller', $className);
 
     /**
      * Search classes in model/ and subdirectories.
      */
     if ($path == NULL) {
-        $path = findClass('model', $className);
+        $path = findClass($_SERVER['DOCUMENT_ROOT'] . '/model', $className);
     }
 
     /**
@@ -93,3 +93,8 @@ set_error_handler('errorHandler');
  * Inintialising the system class, which contains database, session and statistics.
  */
 // $system = System::getInstance();
+$requestObj = Request::getInstance();
+$request = $requestObj->getVariable();
+$sessionObj = Session::getInstance();
+$session = $sessionObj->getVariable();
+$database = Database::getInstance();

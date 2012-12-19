@@ -327,6 +327,22 @@ CREATE TABLE `order_product` (
 ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
+-- Structure for table `payment`
+--
+CREATE TABLE `payment` (
+    `id` INT(11) NOT NULL AUTO_INCREMENT,
+    `order` INT(11) NOT NULL,
+    `amount` FLOAT NOT NULL,
+    `paid` DATETIME NOT NULL,
+
+    PRIMARY KEY (`id`),
+
+    INDEX `ind_payment_ref_order` (`order`),
+    FOREIGN KEY `fk_payment_ref_order` (`order`) REFERENCES `order` (`id`)
+)
+ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
 -- Structure for table `static_page`
 --
 CREATE TABLE `static_page` (
