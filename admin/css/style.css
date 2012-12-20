@@ -1,0 +1,73 @@
+/* 
+    Document   : style
+    Created on : Dec 20, 2012, 1:04:33 PM
+    Author     : ian
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body
+{
+    position: relative;
+    background-color: #808080;
+    margin-top: 0px;
+}
+
+div.container
+{
+    position: relative;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    background-color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #000080;
+}
+
+div.header {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    background-color: #EEEEEE;
+    height: 100px;
+}
+
+div.content {
+    position: relative;
+    width: 100%;
+    background-color: #FFFFFF;
+    min-height: 500px;
+}
+
+div.left-column {
+    position: relative;
+    float: left;
+    width: 180px;
+    height: 100%;
+    min-height: 480px;
+    margin: 10px;
+}
+
+div.page-content {
+    position: relative;
+    float: right;
+    width: 780px;
+    height: 100%;
+    min-height: 480px;
+    margin: 10px;
+}
+
+div.footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background-color: #F4F4F4;
+    height: 60px;
+}
+

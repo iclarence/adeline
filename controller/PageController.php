@@ -39,11 +39,22 @@ class PageController {
     /**
      * Returns the filepath of a file in view.
      * 
-     * @param string $filename 
+     * @param string $filename
+     * @param string $extension
      * @return string
      */
-    protected function getViewFile($filename) {
-        return $_SERVER['DOCUMENT_ROOT'] . '/view/' . $filename . '.php';
+    protected function getViewFile($filename, $extension = 'php') {
+        return $_SERVER['DOCUMENT_ROOT'] . '/view/' . $filename . '.' . $extension;
+    }
+    
+    /**
+     * Returns a link to a file.
+     * 
+     * @param string $filename
+     * @return string
+     */
+    protected function getLink($filename) {
+        return 'http://' . $_SERVER['HTTP_HOST'] . '/' . $filename;
     }
 
 }
