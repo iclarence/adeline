@@ -13,6 +13,11 @@ class Homepage extends PageController {
     const VIEW = 'homepage';
 
     /**
+     * The template.
+     */
+    const TEMPLATE = 'template';
+
+    /**
      * The page title.
      */
     const TITLE = 'Adeline Fogui Store';
@@ -41,11 +46,13 @@ class Homepage extends PageController {
      * @param array $session
      */
     public function run($request = NULL, $session = NULL) {
+        $data = array();
         $this->view(
             self::VIEW, 
-            'template', 
+            self::TEMPLATE,
             $request, 
-            $session, 
+            $session,
+            $data,
             self::TITLE, 
             self::DESCRIPTION, 
             self::KEYWORDS

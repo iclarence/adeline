@@ -18,13 +18,13 @@
                 <div class="left-column">
                     <ul>
                         <li><a href="<?php echo $this->getLink('admin/index.php'); ?>">Admin Home</a></li>
-                        <li><a href="<?php echo $this->getLink('admin/index.php?page=categories'); ?>">Categories</a></li>
-                        <li><a href="<?php echo $this->getLink('admin/index.php?page=subcategories'); ?>">Subcategories</a></li>
-                        <li><a href="<?php echo $this->getLink('admin/index.php?page=brands'); ?>">Brands</a></li>
-                        <li><a href="<?php echo $this->getLink('admin/index.php?page=products'); ?>">Products</a></li>
-                        <li><a href="<?php echo $this->getLink('admin/index.php?page=static_pages'); ?>">Static Pages</a></li>
-                        <li><a href="<?php echo $this->getLink('admin/index.php?page=customers'); ?>">Customers</a></li>
-                        <li><a href="<?php echo $this->getLink('admin/index.php?page=orders'); ?>">Orders</a></li>
+                        <li><a href="<?php echo $this->getLink('admin/index.php?page=Categories'); ?>">Categories</a></li>
+                        <li><a href="<?php echo $this->getLink('admin/index.php?page=Subcategories'); ?>">Subcategories</a></li>
+                        <li><a href="<?php echo $this->getLink('admin/index.php?page=Brands'); ?>">Brands</a></li>
+                        <li><a href="<?php echo $this->getLink('admin/index.php?page=Products'); ?>">Products</a></li>
+                        <li><a href="<?php echo $this->getLink('admin/index.php?page=StaticPages'); ?>">Static Pages</a></li>
+                        <li><a href="<?php echo $this->getLink('admin/index.php?page=Customers'); ?>">Customers</a></li>
+                        <li><a href="<?php echo $this->getLink('admin/index.php?page=Orders'); ?>">Orders</a></li>
                     </ul>
                     
                 </div>

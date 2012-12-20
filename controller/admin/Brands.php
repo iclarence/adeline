@@ -1,16 +1,16 @@
 <?php
 
 /**
- * Admin home page controller.
+ * Admin brands page controller.
  *
  * @author Ian Clarence <ian.clarence@gmail.com>
  */
-class AdminHomepage extends PageController {
+class Brands extends PageController {
 
     /**
      * The view name.
      */
-    const VIEW = 'admin/homepage';
+    const VIEW = 'admin/brands';
 
     /**
      * The template.
@@ -20,7 +20,7 @@ class AdminHomepage extends PageController {
     /**
      * The page title.
      */
-    const TITLE = 'Adeline Fogui Store Admin';
+    const TITLE = 'Manage Brands';
 
     /**
      * The constructor.

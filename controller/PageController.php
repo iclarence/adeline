@@ -20,15 +20,17 @@ class PageController {
      * @param string $template
      * @param array $request
      * @param array $session
+     * @param array $data
      * @param string $title
      * @param string $description
      * @param string $keywords
      */
     protected function view(
-        $page, 
+        $page = 'Homepage', 
         $template = 'template', 
         $request = NULL, 
-        $session = NULL, 
+        $session = NULL,
+        $data = NULL,
         $title = NULL, 
         $description = NULL, 
         $keywords = NULL
