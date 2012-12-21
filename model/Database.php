@@ -90,10 +90,10 @@ class Database {
      */
     private function query(Query $query) {
         $sql = $query->getSql();
-        $stats = System::getStats();
-        $stats->startTimer(self::STATS_KEY, $sql);
+        // $stats = System::getStats();
+        // $stats->startTimer(self::STATS_KEY, $sql);
         $result = mysql_query($sql);
-        $stats->stopTimer(self::STATS_KEY);
+        // $stats->stopTimer(self::STATS_KEY);
         return $result;
     }
 

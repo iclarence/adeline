@@ -27,10 +27,10 @@ class PageController {
      */
     protected function view(
         $page = 'Homepage', 
-        $template = 'template', 
+        $template = 'template',
+        $data = NULL,
         $request = NULL, 
         $session = NULL,
-        $data = NULL,
         $title = NULL, 
         $description = NULL, 
         $keywords = NULL

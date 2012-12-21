@@ -31,6 +31,7 @@
                 <div class="page-content">
                 <?php require $this->getViewFile($page); ?>
                 </div>
+                <div id="clear"></div>
             </div>
             <div class="footer">
             </div>

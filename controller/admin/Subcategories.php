@@ -36,7 +36,7 @@ class Subcategories extends PageController {
      * @param array $session
      */
     public function run($request = NULL, $session = NULL) {
-        $data = array();
+        $data = Subcategory::getList();
         $this->view(
             self::VIEW, 
             self::TEMPLATE,

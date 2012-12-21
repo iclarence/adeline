@@ -63,11 +63,44 @@ div.page-content {
     margin: 10px;
 }
 
+div#clear {
+    clear: both;
+}
+
 div.footer {
     position: relative;
     bottom: 0px;
     width: 100%;
     background-color: #F4F4F4;
     height: 60px;
+}
+
+a, a:visited {
+    color: #000080;
+    text-decoration: none;
+}
+
+a:hover, a:hover:visited, button:hover, input:hover {
+    color: #FF0000;
+}
+
+tr.odd td {
+    background-color: #F4F4F4;
+}
+
+tr.even td, th {
+    background-color: #EEEEEE;
+}
+
+td, th {
+    min-width: 60px;
+    text-align: left;
+    padding: 2px 10px;
+}
+
+button, input, textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #000080;    
 }
 

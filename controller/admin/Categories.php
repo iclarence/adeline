@@ -36,7 +36,7 @@ class Categories extends PageController {
      * @param array $session
      */
     public function run($request = NULL, $session = NULL) {
-        $data = array();
+        $data = Category::getList();
         $this->view(
             self::VIEW, 
             self::TEMPLATE,
@@ -45,6 +45,24 @@ class Categories extends PageController {
             $session, 
             self::TITLE
         );
+    }
+    
+    /**
+     * Adding a new category.
+     * 
+     * @param array $request 
+     */
+    public function add($request) {
+        
+    }
+    
+    /**
+     * Editing a category.
+     * 
+     * @param array $request 
+     */
+    public function edit($request) {
+        
     }
 
 }
