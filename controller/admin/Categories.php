@@ -64,5 +64,14 @@ class Categories extends PageController {
     public function edit($request) {
         
     }
+    
+    /**
+     * Deleting a category.
+     * 
+     * @param array $request 
+     */
+    public function delete($request) {
+        
+    }
 
 }

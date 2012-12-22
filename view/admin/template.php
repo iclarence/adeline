@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="description" content="<?php echo $description; ?>">
-        <meta name="keywords" content="<?php echo $keywords; ?>">
-        <meta name="author" content="Ian Clarence">
-        <meta charset="UTF-8">
+        <meta name="description" content="<?php echo $description; ?>" />
+        <meta name="keywords" content="<?php echo $keywords; ?>" />
+        <meta name="author" content="Ian Clarence" />
+        <meta charset="UTF-8" />
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+        <script src="<?php echo $this->getLink('admin/js/script.js'); ?>"></script>
         <link type = "text/css" rel = "stylesheet" href = "<?php echo $this->getLink('admin/css/style.css'); ?>" />
         <title><?php echo $title; ?></title>
     </head>
@@ -25,8 +26,7 @@
                         <li><a href="<?php echo $this->getLink('admin/index.php?page=StaticPages'); ?>">Static Pages</a></li>
                         <li><a href="<?php echo $this->getLink('admin/index.php?page=Customers'); ?>">Customers</a></li>
                         <li><a href="<?php echo $this->getLink('admin/index.php?page=Orders'); ?>">Orders</a></li>
-                    </ul>
-                    
+                    </ul>                    
                 </div>
                 <div class="page-content">
                 <?php require $this->getViewFile($page); ?>

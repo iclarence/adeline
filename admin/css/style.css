@@ -95,7 +95,8 @@ tr.even td, th {
 td, th {
     min-width: 60px;
     text-align: left;
-    padding: 2px 10px;
+    padding: 3px 10px;
+    line-height: 25px;
 }
 
 button, input, textarea {
